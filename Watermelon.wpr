@@ -1,0 +1,22 @@
+#!wing
+#!version=8.0
+##################################################################
+# Wing project file                                              #
+##################################################################
+[project attributes]
+proj.directory-list = [{'dirloc': loc('.'),
+                        'excludes': ['flow_layout.py'],
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-list = [loc('brush.py'),
+                  loc('control_points.py'),
+                  loc('demo_main.py'),
+                  loc('demo_window.py'),
+                  loc('graphics.py'),
+                  loc('line.py'),
+                  loc('pen.py'),
+                  loc('__init__.py')]
+proj.file-type = 'shared'
+proj.main-file = loc('bubble_like_app.py')

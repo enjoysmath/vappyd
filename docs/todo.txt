@@ -1,0 +1,45 @@
+
+* Right/left mouse drag works on some toolbox items and not others.
+* Signal display per window (lookup how to overlay / mirror a window completely)
+* Code generation restart. (A work in progress)
+* Control-s in a source editor should save (?)
+* Advanced DnD features such as dragging in a python file.
+
+
+Short-term Dev strategy:
+   * Finish getting center-on-mouse to work.
+   * Then test dill lib for file load / save.
+   * Also test copy / paste.
+   * Also start on undo/redo commands.
+   * Should we invent a debug tool to help with item transformation debugging?
+       It would be a DebugView that plugs in (using __new__) when a flag is switched and __debug__ is set.
+       It would be not only a graphics scene but would have overlayed widgets for displaying coordinate data
+       and matrices.
+    * If the user say enables the flag use_debug_view and DebugView isn't installed, we will pop up an installer
+    to grab the latest from BitBucket.
+    * I'm thinking we should use BitBucket private and give public read-only access to paying customers.
+      
+Site "features" section:
+   * Each python module is handcoded, very clean python code less than 400 lines.
+   * Singleness of purpose approach to OOP.
+   * Pickleable signals.
+   * Each library component needs to work with any other components and each one works on its own.
+   
+Site functionality:
+   * Users can select different library components (just what they need only).
+   * Donate button?   
+
+
+Gotta have it:
+-Transparent context menus.
+-Always-on top mini dialogs for settings (Brush, Pen)
+-Context menus with icons by actions.
+-Fully tranformable shapes in "edit" mode (Drag / rotate handles).
+-"Red arrow" tutorial assistant like in bubble.is
+
+
+Selling Points  
+--------------
+* Code generation.
+* Elegant code base and output code.
+* Even end-users can enter code edit mode.
